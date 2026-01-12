@@ -21,7 +21,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <spring-ai.version>1.1.1</spring-ai.version>
+        <spring-ai.version>1.0.0-M6</spring-ai.version>
     </properties>
 
     <dependencies>
@@ -31,9 +31,14 @@
             <version>3.4.1</version>
         </dependency>
         <dependency>
-            <groupId>chat.giga</groupId>
-            <artifactId>spring-ai-starter-model-gigachat</artifactId>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
             <version>${spring-ai.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>5.8.0</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

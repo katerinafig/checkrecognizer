@@ -1,13 +1,8 @@
 spring:
   ai:
-    gigachat:
-      auth:
-        bearer:
-          api-key: ${API_KEY:}
-        scope: GIGACHAT_API_PERS
-        unsafe-ssl: true
+    ollama:
+      base-url: http://localhost:11434
       chat:
-        options:
-          model: GigaChat-2-Max
+        model: llama3.2-vision
 server:
   port: 8080
