@@ -1,0 +1,13 @@
+spring:
+  ai:
+    gigachat:
+      auth:
+        bearer:
+          api-key: ${API_KEY:}
+        scope: GIGACHAT_API_PERS
+        unsafe-ssl: true
+      chat:
+        options:
+          model: GigaChat-2-Max
+server:
+  port: 8080
