@@ -6,6 +6,8 @@ import java.util.List;
 
 @Data
 public class ProductCheck {
+    private Long id;
+    private Long version;
     private List<ProductItem> productItems;
     private String storeName;
     private double totalPrice;

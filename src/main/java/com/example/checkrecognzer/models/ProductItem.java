@@ -4,6 +4,8 @@ import lombok.Data;
 
 @Data
 public class ProductItem {
+    private Long id;
+    private Long version;
     private String name;
     private double quantity;
     private double pricePerUnit;
