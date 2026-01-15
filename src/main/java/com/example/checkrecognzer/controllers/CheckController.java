@@ -35,7 +35,7 @@ public class CheckController {
     }
 
     @PostMapping("/message")
-    public ResponseEntity<?> sendMessage(@RequestBody String message) {
+    public ResponseEntity<String> sendMessage(@RequestBody String message) {
         var answer = chatService.sendMessage(message);
         return ResponseEntity.ok(answer);
     }
